@@ -12,8 +12,7 @@ class testCog(commands.Cog):
     @app_commands.command(name="test", description="Test slash command.")
     @app_commands.guilds(discord.Object(id=1242396018704908289))  # Replace with your guild ID
     async def test(self, interaction: discord.Interaction):
-        await interaction.response.send_message("success!")
-
+        await interaction.response.send_message("**success!**")
 
 
 # Setup function to add this cog

@@ -46,12 +46,6 @@ class WelcomeCog(commands.Cog):
         await channel.send(f"Hello {member.mention}! Welcome To **{member.guild.name}. For more information go to #📑-rules")
         await channel.send(file=file)
 
-    @commands.command()
-    async def wlc(self, ctx):
-        channel = self.bot.get_channel(1242401109059043378)
-        await ctx.send('Test command is working!')
-        await channel.send("Test command is working!")
-
 # The setup function for loading the cog
 async def setup(bot):
     await bot.add_cog(WelcomeCog(bot))
